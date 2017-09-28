@@ -1,0 +1,8 @@
+<h2>Noise Reports in San Francisco</h2>
+
+<% @reports.each do |report| %>
+  <h4><%= report['neighborhood'] %></h4>
+  <p><%= report['address'] %></p>
+  <p><%= report['opened'] %></p>
+  <br>
+<% end %>
